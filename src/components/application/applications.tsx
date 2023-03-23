@@ -5,7 +5,7 @@ import { Flex } from '../flex/flex';
 import { Application } from './application';
 
 export const Applications = () => {
-  const { appData, spendingValue } = useContext(AppContext);
+  const { appData, spendingValue, selectedTreeNode } = useContext(AppContext);
   const [filteredApps, setFilteredApps] = useState<ApplicationRecord[]>([])
 
   const styles: React.CSSProperties = {
@@ -15,10 +15,12 @@ export const Applications = () => {
 
   useEffect(() => {
     const filtered = appData?.filter((app) => {
-      return app.spend >= spendingValue;
+      const isSpendGreater = app.spend >= spendingValue;
+      const isSelected = app.BCAP1 === selectedTreeNode?.id || app.BCAP2 === selectedTreeNode?.id || app.BCAP3 === selectedTreeNode?.id;
+      return isSpendGreater && isSelected;
     });
     setFilteredApps(filtered || []);
-  }, [appData, spendingValue])
+  }, [appData, spendingValue, selectedTreeNode])
 
   return (
     <Flex styles={styles}>
