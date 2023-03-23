@@ -1,10 +1,12 @@
 import React from "react";
+import { AppContextProvider } from "./contexts/app-context";
+import { DataExplorer } from "./components/data-explorer";
 
 function App() {
   return (
-    <div>
-      <h1>React Coding Exercise</h1>
-    </div>
+    <AppContextProvider>
+      <DataExplorer></DataExplorer>
+    </AppContextProvider>
   );
 }
 

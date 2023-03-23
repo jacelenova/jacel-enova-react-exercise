@@ -1,0 +1,25 @@
+.label {
+  font-size: small;
+}
+
+.minmax {
+  width: 70%;
+  font-size: 10px;
+}
+
+.min {
+  float: left;
+}
+
+.max {
+  float: right;
+}
+
+.range {
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.range > input {
+  width: 70%;
+}

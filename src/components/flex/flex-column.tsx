@@ -1,0 +1,2 @@
+import { FlexProps } from '../../models/flex-props';
+export const FlexColumn = ({children, styles, className}: FlexProps) => <div style={{ display: 'flex', flexDirection: 'column', ...styles }} className={className}>{children}</div>

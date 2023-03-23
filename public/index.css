@@ -1,0 +1,14 @@
+html, body, #root {
+  font-family: Helvetica, 'Courier New', Courier;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
