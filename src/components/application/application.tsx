@@ -1,4 +1,5 @@
-import { ApplicationRecord } from "../models/application-record"
+
+import { ApplicationRecord } from '../../models/application-record';
 import './application.css';
 
 export const Application = ({application }: {application: ApplicationRecord}) => {

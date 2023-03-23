@@ -1,8 +1,8 @@
 import './navigation-tree.css';
 import { useContext } from 'react';
-import { AppContext } from '../contexts/app-context';
 import { TreeItem } from './tree-item';
-import { FlexColumn } from './flex/flex-column';
+import { AppContext } from '../../contexts/app-context';
+import { FlexColumn } from '../flex/flex-column';
 
 export const NavigationTree = () => {
   const { appDataTree } = useContext(AppContext);

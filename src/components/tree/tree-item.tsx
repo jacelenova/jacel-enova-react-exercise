@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
-import { AppContext } from '../contexts/app-context';
-import { TreeNode } from "../models/tree-node"
+import { AppContext } from '../../contexts/app-context';
+import { TreeNode } from '../../models/tree-node';
 import './tree-item.css';
 
 export const TreeItem = ({data}: {data: TreeNode}) => {

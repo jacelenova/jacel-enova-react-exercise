@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from 'react';
-import { AppContext } from "../contexts/app-context"
-import { ApplicationRecord } from '../models/application-record';
+import { AppContext } from '../../contexts/app-context';
+import { ApplicationRecord } from '../../models/application-record';
+import { Flex } from '../flex/flex';
 import { Application } from './application';
-import { Flex } from './flex/flex';
 
 export const Applications = () => {
   const { appData, spendingValue } = useContext(AppContext);

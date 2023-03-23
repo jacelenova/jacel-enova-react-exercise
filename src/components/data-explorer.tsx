@@ -1,6 +1,6 @@
-import { Applications } from './applications';
-import { Filters } from './filters/filters';
-import { NavigationTree } from './navigation-tree';
+import { Filters } from './filter/filters';
+import { Applications } from './application/applications';
+import { NavigationTree } from './tree/navigation-tree';
 import './data-explorer.css';
 
 export const DataExplorer = () => {
